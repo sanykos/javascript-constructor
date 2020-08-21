@@ -16,4 +16,10 @@ function textColumns(block) {
     return row(html.join(''), block.options.styles)
 }
 
-export const templates = { title, text, textColumns }
+function image(block) {
+    const {alt, styles, imageStyles} = block.options
+    const html = `<img src="${block.value}" alt="${alt}" style="${imageStyles}">`
+    return row(html, styles)
+}
+
+export const templates = { title, text, textColumns, image }
