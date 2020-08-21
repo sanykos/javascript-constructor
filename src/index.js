@@ -1,2 +1,3 @@
 import './styles/main.css'
-console.log('index js')
+import {model} from './model'
+console.log(model)
