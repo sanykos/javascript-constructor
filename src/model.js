@@ -14,14 +14,14 @@ export const model = [
         }
     },
     {
-        type: 'textColumn',
+        type: 'textColumns',
         value: [
             '1 text',
             '2 text',
             '3 text'
         ],
         options: {
-            
+
         }
     }
 ]
