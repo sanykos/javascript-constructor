@@ -1,9 +1,15 @@
 import image from './assets/javascript.png'
 import { TitleBlock, ImageBlock, TextBlock, TextColumnsBlock } from './classes/blocks'
+import { css } from './utils'
 export const model = [
     new TitleBlock('test title', {
         tag: 'h2',
-        styles: 'background: darkred; color: #fff'
+        styles: css({
+            background: 'darkred',
+            color: '#fff',
+            padding: '1rem',
+        }),
+        //styles: 'background: darkred; color: #fff'
     }),
     new ImageBlock(image, {
         imageStyles: 'width: 500px; height: auto',
